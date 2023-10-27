@@ -1,98 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="icon" href="favicon.ico">
   <title>Shoebox Kenya</title>
 </head>
 <body>
   <nav id="nav">
     <div class="navTop">
-      <div class="navItem">
-        <img src="./img/shoebox logo.png" alt="">
-      </div>
-      <div class="navItem">
-        <div class="search">
-          <label>
-            <input type="text" placeholder="Search..." class="searchinput">
-          </label>
+        <img src="./img/shoebox logo.png" width="77.3" height="60.2" alt="" class="logo">
+      <h1>SHOE BOX</h1>
+      <div class="search">
+        <label>
           <img src="./img/Pinterest_Download (9).jpg" width="20" height="20" alt="" class="searchIcon">
-      </div>
-      <div class="navItem">
-            <span class="Limitedoffer">Limited Offer!</span>
-      </div>
-      <div class="navBottom">
-        <h3 class="menuItem">FLUFFY SANDALS</h3>
-        <h3 class="menuItem">LILAC SANDALS</h3>
-        <h3 class="menuItem">JORDAN 1 LOW(TRAVISSCOTT)</h3>
-        <h3 class="menuItem">SANDALS</h3>
-        <h3 class="menuItem">CHAIN SANDALS</h3>
-        <h3 class="menuItem">ADIDAS SAMBA</h3>
-        <h3 class="menuItem">AIRMAX TM.</h3>
-      </div>
-      </div>
+          <input type="text" placeholder="Search" class="searchinput">
+        </label>
     </div>
-      </nav>
-      <div class="slider">
-        <div class="sliderWrapper">
-          <div class="sliderItem">
-            <img src="./img/fluffy%20white%20background.jpg" alt="" class="sliderImg">
-            <div class="sliderBg"></div>
-            <h1 class="sliderTitle">Fluffy Sandal <br>New</br> <br> Season</br></h1>
-            <h2 class="sliderPrice">2000 ksh</h2>
-           <a href="#product">
-            <button class="buyButton">BUY NOW</button>
-           </a>
-          </div>
-          <div class="sliderItem">
-            <img src="./img/lilac%20sandals%20over%20vie.jpg" alt="" class="sliderImg">
-            <div class="sliderBg"></div>
-            <h1 class="sliderTitle">Lilac sandal </br>New</br> Season</h1>
-            <h2 class="sliderPrice">1800 ksh</h2>
-           <a href="#product">
-            <button class="buyButton">BUY NOW</button>
-           </a>
-          </div>
-          <div class="sliderItem">
-            <img src="./img/jordan%201%20low%20travis%20scott.jpg" alt="" class="sliderImg">
-            <div class="sliderBg"></div>
-            <h1 class="sliderTitle">Jordan 1 low Travisscott </br>New</br> Season</h1>
-            <h2 class="sliderPrice">3500 ksh</h2>
-            <button class="buyButton">BUY NOW</button>
-          </div>
-          <div class="sliderItem">
-            <img src="./img/chain%20sandals%20overview.jpg" alt="" class="sliderImg">
-            <div class="sliderBg"></div>
-            <h1 class="sliderTitle">Chain sandals </br>New</br> Season</h1>
-            <h2 class="sliderPrice">2100 ksh</h2>
-           <a href="#product">
-            <button class="buyButton">BUY NOW</button>
-           </a>
-          </div>
-          <div class="sliderItem">
-            <img src="./img/adidas%20samba%20black,%20white%20stripes.jpg" alt="" class="sliderImg">
-            <div class="sliderBg">
-              <h1 class="sliderTitle">Adidas Samba </br>New</br> Season</h1>
-            </div>
-            <h2 class="sliderPrice">3200 ksh</h2>
-            <a href="#prooduct">
-            <button class="buyButton">BUY NOW</button>
-              </a>
-          </div>
-          <div class="sliderItem">
-            <img src="./img/airmax.%20TM%20golden.jpg" alt="" class="sliderImg">
-            <div class="sliderBg"></div>
-            <h1 class="sliderTitle">Airmax TM </br>New</br> Season</h1>
-            <h2 class="sliderPrice">3300 ksh</h2>
-            <a href="#product">
-            <button class="buyButton">BUY NOW</button>
-              </a>
-          </div>
+    </div>
+     <span class="LimitedOffer">Limited Offer!</span>
+    <div class="navBottom">
+      <h3><a href="#fluffy" class="menuItem">FLUFFY SANDALS</a></h3>
+      <h3><a href="#lilac" class="menuItem"> LILAC SANDALS </a> </h3>
+      <h3><a href="#travis" class="menuItem"> JORDAN 1 LOW(TRAVISSCOTT)</a></h3>
+      <h3><a href="#chain" class="menuItem"> CHAIN SANDALS</a></h3>
+      <h3><a href="#adidas" class="menuItem">ADIDAS SAMBA</a> </h3>
+      <h3><a href="#airmax" class="menuItem"> AIRMAX TM</a></h3>
+    </div>
+  </nav>
+  <div class = "horizontal">
+  <div id="fluffy" class="slider" >
+    <div class="slidderWrapper">
+      <div class="sliderItem">
+        <img src="./img/fluffy_white_background-removebg.png" alt="" width="700" height="700" class="sliderImg">
+        <div class="sliderBg"></div>
+        <h1 class="sliderTitle">Fluffy Sandal<br>New<br>Season<br>
+          <h2 class="sliderPrice">2000 ksh</h2>
+        </h1>
+        <a href="#product">
+          <button class="buyButton">BUY NOW</button>
+        </a>
         </div>
+      </div>
     </div>
+  <div id="lilac" class="slider">
+    <div class="slidderWrapper">
+      <div class="sliderItem">
+        <img src="./img/lilac%20sandals%20over%20vie.jpg" alt="" width="700" height="700" class="sliderImg">
+        <div class="sliderBg"></div>
+        <h1 class="sliderTitle">Lilac sandal <br>New<br> Season <br>
+          <h2 class="sliderPrice">1800 ksh</h2>
+        </h1>
+        <a href="#product">
+          <button class="buyButton">BUY NOW</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="travis" class="slider">
+    <div class="slidderWrapper">
+      <div class="sliderItem">
+        <img src="./img/jordan%201%20low%20travis%20scott.jpg" alt="" width="700" height="700" class="sliderImg"><div class="sliderBg"></div>
+        <h1 class="sliderTitle">Jordan 1 low <br> Travis scott <br>New Season <br>
+        <h2 class="sliderPrice">3500 ksh</h2>
+        </h1>
+        <a href="#product">
+          <button class="buyButton">BUY NOW</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="chain" class="slider">
+    <div class="slidderWrapper">
+      <div class="sliderItem">
+        <img src="./img/chain%20sandals%20overview.jpg" alt="" width="700" height="700" class="sliderImg">
+        <div class="sliderBg"></div>
+        <h1 class="sliderTitle">Chain sandals <br>New<br> Season <br>
+        <h2 class="sliderPrice">2100 ksh</h2>
+        </h1>
+        <a href="#product">
+          <button class="buyButton">BUY NOW</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="adidas" class="slider">
+    <div class="slidderWrapper">
+      <div class="sliderItem">
+        <img src="./img/adidas%20samba%20black,%20white%20stripes.jpg" alt="" width="700" height="700" class="sliderImg">
+        <div class="sliderBg"></div>
+          <h1 class="sliderTitle">Adidas Samba <br>New<br> Season <br>
+        <h2 class="sliderPrice">3200 ksh</h2>
+        </h1>
+        <a href="#product">
+          <button class="buyButton">BUY NOW</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="airmax" class="slider">
+    <div class="slidderWrapper">
+      <div class="sliderItem">
+        <img src="./img/airmax.%20TM%20golden.jpg" alt="" width="700" height="700" class="sliderImg">
+        <div class="sliderBg"></div>
+        <h1 class="sliderTitle">Airmax TM <br>New<br> Season <br>
+        <h2 class="sliderPrice">3300 ksh</h2>
+        </h1>
+        <a href="#product">
+          <button class="buyButton">BUY NOW</button>
+        </a>
+      </div>
+    </div>
+  </div>
   </div>
   <div class="features">
     <div class="feature">
@@ -101,12 +126,12 @@
       <span class="featuredDesc">Free Shipping to areas near Kahawa Wendani</span>
     </div>
     <div class="feature">
-      <img src="./img/returnpolicy.jpg" alt="" class="featureing">
+      <img src="./img/return policy.jpg" alt="" class="featureing">
       <span class="featureTitle">3 DAYS RETURN</span>
       <span class="featuredDesc">If unworn return and easy refund in 7 days</span>
     </div>
     <div class="feature">
-      <img src="./img/giftcard.jpg" alt="" class="featureing">
+      <img src="./img/gift card.jpg" alt="" class="featureing">
       <span class="featureTitle">Gift Cards</span>
       <span class="featuredDesc">Buy gift cards and use coupon codes easily</span>
     </div>
@@ -132,29 +157,41 @@
     <div class="size">44</div>
   </div>
   <button class="productionButton">BUY NOW</button>
-  </div>
   <div class="payment">
     <h1 class="payTitle">Personal Information</h1>
     <lable>Name and Surname</lable>
-    <input type="text" placeholder="Kaari Mathenge" class="payInput">
+    <label>
+      <input type="text" placeholder="Kaari Mathenge" class="payInput">
+    </label>
     <lable>Phone Number</lable>
-    <input type="text" placeholder="+254 757 577 605" class="payInput">
+    <label>
+      <input type="text" placeholder="+254 757 577 605" class="payInput">
+    </label>
     <lable>Address</lable>
-    <input type="text" placeholder="Kahawa Wendani" class="payInput">
+    <label>
+      <input type="text" placeholder="Kahawa Wendani" class="payInput">
+    </label>
     <h1 class="payTitle">Mpesa Number</h1>
     <div class="phoneIcons">
       <img src="./img/payment icon.jpg" width="40" alt="" class="phoneIcon">
     </div>
-    <input type="password" class="payInput" placeholder="phone number">
+    <label>
+      <input type="password" class="payInput" placeholder="phone number">
+    </label>
     <div class="paymentInfo">
-      <input type="text" placeholder="mm" class="payInput sm">
-      <input type="text" placeholder="yyyy" class="payInput sm">
-      <input type="text" placeholder="cvv" class="payInput sm">
+      <label>
+        <input type="text" placeholder="mm" class="payInput sm">
+      </label>
+      <label>
+        <input type="text" placeholder="yyyy" class="payInput sm">
+      </label>
+      <label>
+        <input type="text" placeholder="cvv" class="payInput sm">
+      </label>
     </div>
     <button class="payButton">Checkout!</button>
     <span class="close">X</span>
   </div>
- </div>
   <div class="gallery">
     <div class="galleryItem">
       <h1 class="galleryTitle">Walk A Mile With Us!</h1>
@@ -179,7 +216,7 @@
           <h3 class="nsTitlesm">CHRISTMASS NEW ARRIVALS</h3>
           <h1 class="nsTitle">New Season</h1>
         <h1 class="nsTitle">New Collection</h1>
-        <a href="nav">
+        <a href="#nav">
           <button class="nsButton">CHOOSE YOUR STYLE</button>
         </a>
           <img src="https://images.pexels.com/photos/2929287/pexels-photo-2929287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="nsImg">
@@ -222,7 +259,9 @@
         <div class="footerRightMenu">
           <h1 class="fMenuTitle">Subscribe to our Newsletter</h1>
           <div class="fMail">
-            <input type="text" placeholder="your@gmail.com" class="fInput">
+            <label>
+              <input type="text" placeholder="your@gmail.com" class="fInput">
+            </label>
             <button class="fButton">Join!</button>
             </div>
         </div>
@@ -238,7 +277,7 @@
         </div>
       </div>
     </footer>
-  <script src=".app.js"></script>
+  <script src="app.js"></script>
   </div>
 </body>
 </html>

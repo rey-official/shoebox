@@ -1,5 +1,5 @@
 const wrapper = document.querySelector(".slideWrapper")
-const menuItems = document.querrySelectorAll(".menuItem")
+const menuItems = document.querySelectorAll(".menuItem")
 
 const products =[
   {
@@ -39,13 +39,13 @@ const products =[
         img: "./img/lilac sandals red.jpg",
       },
       {
-        code: "yellow"
+        code: "yellow",
         img: "./img/lilac sandals yellow.jpg",
       },
     ]
   },
   {
-    id: 3
+    id: 3,
     title: "Jordan 1 low Travisscott New Season",
     price: 3500,
     colors: [
@@ -114,7 +114,7 @@ const products =[
   },
 ];
 
-let choosenProduct = product[0]
+let choosenProduct = products[0]
 
 const currentProductImg = document.querySelector(".productImg");
 const currentProductTitle = document.querySelector(".productTitle");
@@ -122,25 +122,46 @@ const currentProductPrice = document.querySelector(".productPrice");
 const currentProductColors = document.querySelectorAll(".color");
 const currentProductSizes = document.querySelectorAll(".size");
 
-menuItems.forEach(item,index)=>{
-  item.addEventListener("click, ()=>"){
-    //chage the current slide
-    wrapper.style.transform= `translateX(${-100 * index}vw)`;
+menuItems.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    // Change the current slide
+    wrapper.style.transform = `translateX(${-100 * index}vw)`;
 
-    //change the choosen product
-    choosenProduct = products[index]
+    // Change the chosen product
+    choosenProduct = products[index];
 
-    //change texts of currentProduct
-    currentProductTitle.textContent = choosenProduct.title
-    currentProductPrice.textContent = "ksh" + choosenProduct.price
-    currentProductImg.src = choosenProduct.colors[0].img
+    // Change texts of currentProduct
+    currentProductTitle.textContent = choosenProduct.title;
+    currentProductPrice.textContent = "ksh" + choosenProduct.price;
+    currentProductImg.src = choosenProduct.colors[0].img;
 
-    //passing new colors
-    currentProductColors.forEach((color, index) => {
-      color.style.backgroundColor = choosenProduct.colors[index].code;
+    // Pass new colors
+    currentProductColors.forEach((colorElement, colorIndex) => {
+      colorElement.style.backgroundColor = choosenProduct.colors[colorIndex].code;
     });
   });
 });
+
+// menuItems.forEach(item,index)=>{
+//   item.addEventListener("click, ()=>")
+//   {
+//     //chage the current slide
+//     wrapper.style.transform= `translateX(${-100 * index}vw)`;
+//
+//     //change the choosen product
+//     choosenProduct = products[index]
+//
+//     //change texts of currentProduct
+//     currentProductTitle.textContent = choosenProduct.title
+//     currentProductPrice.textContent = "ksh" + choosenProduct.price
+//     currentProductImg.src = choosenProduct.colors[0].img
+//
+//     //passing new colors
+//     currentProductColors.forEach((color, index) => {
+//       color.style.backgroundColor = choosenProduct.colors[index].code;
+//     });
+//   });
+// });
 
 
 currentProductColors.forEach((color, index)=>{
@@ -161,9 +182,9 @@ currentProductSizes.forEach((size, index)=>{
 });
 
 
-const productButton = document.querrySeletor(".productButton");
-const payment = document.querrySeletor(".payment");
-const close = document.querrySeletor(".close");
+const productButton = document.querySelector(".productButton");
+const payment = document.querySelector(".payment");
+const close = document.querySelector(".close");
 
 productButton.addEventListener("click",()=>{
   payment.style.display="flex"

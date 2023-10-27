@@ -1,5 +1,5 @@
 html{
-  scroll-behaviour: smooth;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -11,7 +11,7 @@ body{
 nav{
   background-color: #ffd700;
   color: white;
-  padding: 20px 50px;
+  padding: 10px 10px;
 }
 
 .navTop{
@@ -19,6 +19,13 @@ nav{
   align-items: center;
   justify-content: space-between;
 }
+.logo{
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+}
+
 
 .search{
   display: flex;
@@ -37,10 +44,26 @@ nav{
   color: lightgray;
 }
 
-.LimitedOffer{
+@keyframes flashColors {
+  0%, 100% {
+    color: #008000FF;
+  }
+  25%,75% {
+    color:#FF0000;
+  }
+  50% {
+    color: black;
+  }
+}
+
+.LimitedOffer {
+  padding-right: 140px;
   font-size: 20px;
-  color: #008000FF;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly ;
+  animation: flashColors 1s infinite; /* Apply the animation */
 }
 
 .navBottom{
@@ -48,30 +71,33 @@ nav{
   align-items: center;
   justify-content: center;
 }
-
 .menuItem{
   margin-right: 50px;
+  color: black;
   cursor: pointer;
-  color: lightgray;
   font-weight: 400;
+  text-decoration: none;
 }
-
+.menuItem:hover{
+  color: white;
+  font-size: larger;
+  cursor: pointer;
+}
 .slider{
-  background: url(https://unsplash.com/photos/low-angle-photography-of-palm-trees-under-blue-sky-during-daytime-sp4dq3f825M?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-  overflow: hidden;
 }
 
 .slidderWrapper{
   display : flex;
   width: 500vw;
-  transition: all 1.5s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 
 .sliderItem {
   width: 100vw;
   display: flex;
-  align-items: center;justify-content: center;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
 
@@ -89,7 +115,7 @@ nav{
 .sliderTitle {
   position: absolute;
   top: 10%;
-  right: 10%;
+  right: 3%;
   font-size:60px;
   font-weight: 900;
   text-align: center;
@@ -99,8 +125,8 @@ nav{
 
 .sliderPrice {
   position: absolute;
-  top: 10%;
-  right: 10%;
+  top: 40%;
+  right: 7%;
   font-size:60px;
   font-weight: 300;
   text-align: center;
@@ -108,10 +134,15 @@ nav{
   border: 1px solid gray;
   z-index: 1;
 }
-
-.buybutton {
+#fluffy{
+  background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9zdGF0aWMvaW1hZ2VzL3dlYnNpdGUvMjAyMi0wNS9ybTI2Ny1udW5ueS0wNGIuanBn.jpg?s=EF7PyBgy_b_v0iS7EM0plrJJ-cbhSM2JgRWOyouOJSw);
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.buyButton {
   position: absolute;
-  top: 50px;
+  top: 60%;
   right: 10%;
   font-size:30px;
   font-weight: 900;
@@ -128,7 +159,7 @@ nav{
 }
 
 .sliderItem:nth-child(1) .sliderBg{
-  background-color: gold;
+  background-color: #ffd700;
 }
 
 .sliderItem:nth-child(2) .sliderBg{
@@ -189,7 +220,7 @@ nav{
 
 .product{
   height: 100vh;
-  backgroud-color: whitesmoke;
+  background-color: whitesmoke;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 }
