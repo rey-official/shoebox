@@ -9,7 +9,7 @@ body{
 }
 
 nav{
-  background-color: #ffd700;
+  background-color: black;
   color: white;
   padding: 10px 10px;
 }
@@ -25,14 +25,22 @@ nav{
   width: 100px;
   height: 100px;
 }
-
+.searchIcon{
+  border-radius: 50%;
+}
+.searchIcon:hover{
+  cursor: pointer;
+}
+.eye{
+  border-radius: 50%;
+}
 
 .search{
   display: flex;
   align-items: center;
   background-color: #888888;
-  padding: 10px 20px;
-  border-radius: 10px;
+  padding: 10px 10px;
+  border-radius: 5px;
 }
 
 .searchInput{
@@ -57,33 +65,47 @@ nav{
 }
 
 .LimitedOffer {
+  background-color: #ffd700;
   padding-right: 140px;
   font-size: 20px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-evenly ;
-  animation: flashColors 1s infinite; /* Apply the animation */
+  animation: flashColors 1s infinite;
 }
 
 .navBottom{
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #ffd700;
 }
 .menuItem{
-  margin-right: 50px;
+  margin-right: 120px;
   color: black;
   cursor: pointer;
   font-weight: 400;
   text-decoration: none;
+  padding: 10px 10px;
 }
 .menuItem:hover{
   color: white;
   font-size: larger;
+  font-family: "Arial Rounded MT Bold", serif;
   cursor: pointer;
 }
+.horizontal{
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
 .slider{
+  /*display: none;*/
+  /*position: absolute;*/
+  /*width: 100%;*/
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 }
 
@@ -140,22 +162,57 @@ nav{
   background-size: cover;
   background-repeat: no-repeat;
 }
+#travis{
+  background-image:url("./img/room-7239127_1280.jpg");
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#lilac{
+  background-image:url("./img/pngtree-black-bright-crystal-flash-flash-picture-image_1375285.jpg");
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#chain{
+    background-image:url("./img/whitebg.jpg");
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#adidas{
+  background-image:url("./img/leafy.jpg");
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#airmax{
+  background-image:url("./img/blue.jpg");
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .buyButton {
   position: absolute;
-  top: 60%;
+  top: 65%;
   right: 10%;
-  font-size:30px;
-  font-weight: 900;
-  color: white;
-  border: 1px solid gray;
-  background-color: black;
-  z-index: 1;
+  transform: translateY(-50%);
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
   cursor: pointer;
+  font-weight: 900;
+  z-index: 1;
 }
 
 .buyButton:hover{
   background-color: white;
   color: black;
+
 }
 
 .sliderItem:nth-child(1) .sliderBg{
@@ -186,6 +243,7 @@ nav{
   align-items: center;
   justify-content: space-between;
   padding: 50px;
+  max-width: 100%;
 }
 
 .feature{
@@ -219,10 +277,10 @@ nav{
 }
 
 .product{
+  background-image: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9zdGF0aWMvaW1hZ2VzL3dlYnNpdGUvMjAyMi0wNS9ybTI2Ny1udW5ueS0wNGIuanBn.jpg?s=EF7PyBgy_b_v0iS7EM0plrJJ-cbhSM2JgRWOyouOJSw);
   height: 100vh;
-  background-color: whitesmoke;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  /*clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);*/
 }
 
 .payment {
@@ -316,7 +374,7 @@ nav{
 
 .productDetails{
   position: absolute;
-  top: 10%;
+  top: 1%;
   right:0;
   width:40%;
   padding:50px;
@@ -329,6 +387,7 @@ nav{
 .productDesc{
   font-style: normal;
   color: gray;
+  font-size: larger;
 }
 
 .colors,.sizes{
@@ -355,13 +414,17 @@ nav{
 }
 
 .productButton{
-  float: right;
+  position: absolute;
+  top: 98%;
+  right: 425px;
+  transform: translateY(-50%);
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
   padding: 10px 20px;
-  background-color: black;
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-}
+  font-size: 16px;
+  cursor: pointer;}
 
 .productButton:hover{
   background-color: white;

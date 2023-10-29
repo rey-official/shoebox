@@ -8,7 +8,7 @@ const products =[
     price: 2000,
     colors: [
       {
-        code: "black",
+        code: "brown",
         img: "./img/fluffy white background.jpg",
       },
       {
@@ -124,7 +124,7 @@ const currentProductSizes = document.querySelectorAll(".size");
 
 menuItems.forEach((item, index) => {
   item.addEventListener("click", () => {
-    // Change the current slide
+    // Change the current slider
     wrapper.style.transform = `translateX(${-100 * index}vw)`;
 
     // Change the chosen product
@@ -141,29 +141,6 @@ menuItems.forEach((item, index) => {
     });
   });
 });
-
-// menuItems.forEach(item,index)=>{
-//   item.addEventListener("click, ()=>")
-//   {
-//     //chage the current slide
-//     wrapper.style.transform= `translateX(${-100 * index}vw)`;
-//
-//     //change the choosen product
-//     choosenProduct = products[index]
-//
-//     //change texts of currentProduct
-//     currentProductTitle.textContent = choosenProduct.title
-//     currentProductPrice.textContent = "ksh" + choosenProduct.price
-//     currentProductImg.src = choosenProduct.colors[0].img
-//
-//     //passing new colors
-//     currentProductColors.forEach((color, index) => {
-//       color.style.backgroundColor = choosenProduct.colors[index].code;
-//     });
-//   });
-// });
-
-
 currentProductColors.forEach((color, index)=>{
   color.addEventListener("click", () =>{
     currentProductImg.src = choosenProduct.colors[index].img;
@@ -193,3 +170,26 @@ productButton.addEventListener("click",()=>{
   close.addEventListener("click",()=>{
   payment.style.display="none";
 });
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slider');
+
+function showSlide(index) {
+  slides.forEach((slider, i) => {
+    slides.style.display = i === index ? 'block' : 'none';
+  });
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
+
+// Initial display
+showSlide(currentSlide);
+
+setInterval(nextSlide, 3000); // Change slider every 3 seconds
